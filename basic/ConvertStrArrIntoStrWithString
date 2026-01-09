@@ -1,0 +1,28 @@
+public class ConvertStrArrIntoStrWithString {
+    public static void main(String[] args) {
+
+        String[] arr = {"mango", "banana", "apple"};
+        String str = "";
+
+        for (String s : arr) {
+            str = str + s;
+        }
+
+        System.out.println(str);
+    }
+}
+
+public class ConvertStrArrIntoStrWithStringBuffer {
+    public static void main(String[] args) {
+
+        String[] arr = {"mango", "banana", "apple"};
+        StringBuffer sb = new StringBuffer();
+
+        for (String s : arr) {
+            sb.append(s);
+        }
+
+        System.out.println(sb);
+    }
+}
+
