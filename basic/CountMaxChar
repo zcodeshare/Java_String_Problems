@@ -1,0 +1,23 @@
+public class CountMaxChar {
+
+    public static void main(String[] args) {
+        String str = "faaabbaacfffffffff"; 
+        int[] chars = new int[256]; 
+        char ch = 0;
+
+        for (int i = 0; i < str.length(); i++) { 
+            chars[str.charAt(i)]++; 
+        }
+
+        int max = -1; 
+        for (int i = 0; i < str.length(); i++) { 
+            if (max < chars[str.charAt(i)]) { 
+                max = chars[str.charAt(i)]; 
+                ch = str.charAt(i); 
+            }
+        }
+
+        System.out.println(ch + " : " + max);
+ 
+    }
+}
