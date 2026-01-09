@@ -1,0 +1,26 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MostRepetitiveChar {
+    public static void main(String[] args) {
+
+        String str = "programming";
+        Map<Character, Integer> freqMap = new HashMap<>();
+
+        for (char ch : str.toCharArray()) {
+            freqMap.put(ch, freqMap.getOrDefault(ch, 0) + 1);
+        }
+
+        char maxChar = ' ';
+        int maxFreq = 0;
+
+        for (Map.Entry<Character, Integer> entry : freqMap.entrySet()) {
+            if (entry.getValue() > maxFreq) {
+                maxFreq = entry.getValue();
+                maxChar = entry.getKey();
+            }
+        }
+
+        System.out.println("Most repetitive character: " + maxChar);
+    }
+}
