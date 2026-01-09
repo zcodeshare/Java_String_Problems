@@ -1,0 +1,45 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class StringCompression {
+    public static void main(String[] args) {
+
+        String str = "aaabbc";
+        Map<Character, Integer> map = new LinkedHashMap<>();
+
+        for (char ch : str.toCharArray()) {
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+
+        StringBuilder compressed = new StringBuilder();
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            compressed.append(entry.getKey()).append(entry.getValue());
+        }
+
+        System.out.println(compressed.toString());
+    }
+}
+
+
+//Second Appraoch
+
+public class StringCompression {
+    public static void main(String[] args) {
+
+        String str = "aaabbc";
+        StringBuilder compressed = new StringBuilder();
+
+        int count = 1;
+        for (int i = 0; i < str.length(); i++) {
+
+            if (i + 1 < str.length() && str.charAt(i) == str.charAt(i + 1)) {
+                count++;
+            } else {
+                compressed.append(str.charAt(i)).append(count);
+                count = 1;
+            }
+        }
+
+        System.out.println(compressed.toString());
+    }
+}
