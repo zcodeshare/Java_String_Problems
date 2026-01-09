@@ -1,0 +1,15 @@
+public class FindLongestStrFromArray {
+    public static void main(String[] args) {
+        String[] arr = {"apple", "banana", "kiwi", "strawberry", "mango"};
+
+        String longest = arr[0];
+
+        for (String str : arr) {
+            if (str.length() > longest.length()) {
+                longest = str;
+            }
+        }
+
+        System.out.println("Longest String : "+longest);
+    }
+}
