@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class FirstNonRepeatingChar {
+    public static void main(String[] args) {
+
+        String str = "swiss";
+        Map<Character, Integer> freqMap = new HashMap<>();
+
+        for (char ch : str.toCharArray()) {
+            freqMap.put(ch, freqMap.getOrDefault(ch, 0) + 1);
+        }
+
+        for (char ch : str.toCharArray()) {
+            if (freqMap.get(ch) == 1) {
+                System.out.println("First non-repeating character: " + ch);
+                break;
+            }
+        }
+    }
+}
