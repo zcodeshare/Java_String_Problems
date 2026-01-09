@@ -1,0 +1,16 @@
+public class CountDuplicateCharArray {
+    public static void main(String[] args) {
+        String str = "deekshaa";
+        int[] count = new int[256];
+
+        for (char c : str.toCharArray()) {
+            count[c]++;
+        }
+
+        for (int i = 0; i < count.length; i++) {
+            if (count[i] > 1) {
+                System.out.println((char)i + " " + count[i]);
+            }
+        }
+    }
+}
