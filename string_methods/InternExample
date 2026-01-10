@@ -1,0 +1,7 @@
+public class InternExample {
+    public static void main(String[] args) {
+        String a = new String("hello");
+        String b = a.intern();
+        System.out.println(a == b);
+    }
+}
