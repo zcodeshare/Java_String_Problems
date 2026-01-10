@@ -1,0 +1,9 @@
+import java.util.StringJoiner;
+
+public class JoinExample {
+    public static void main(String[] args) {
+        String[] fruits = {"apple", "banana", "orange"};
+        String joined = String.join(" | ", fruits);
+        System.out.println(joined);
+    }
+}
