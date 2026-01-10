@@ -1,0 +1,6 @@
+public class FormatExample {
+    public static void main(String[] args) {
+        String s = String.format("My age is %d", 25);
+        System.out.println(s);
+    }
+}
