@@ -1,0 +1,12 @@
+public class CountDigitsNegative {
+    public static void main(String[] args) {
+        int n = -1234;
+        n = Math.abs(n);
+        int count = 0;
+        while (n > 0) {
+            count++;
+            n /= 10;
+        }
+        System.out.println(count);
+    }
+}
