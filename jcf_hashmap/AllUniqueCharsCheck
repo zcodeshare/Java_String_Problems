@@ -1,0 +1,19 @@
+import java.util.HashSet;
+
+public class AllUniqueCharsCheck {
+    public static void main(String[] args) {
+        String str = "abcdef";
+
+        HashSet<Character> set = new HashSet<>();
+        boolean allUnique = true;
+
+        for (char ch : str.toCharArray()) {
+            if (!set.add(ch)) {
+                allUnique = false;
+                break;
+            }
+        }
+
+        System.out.println(allUnique);
+    }
+}
