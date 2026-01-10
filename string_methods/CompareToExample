@@ -1,0 +1,7 @@
+public class CompareToExample {
+    public static void main(String[] args) {
+        String a = "apple";
+        String b = "banana";
+        System.out.println(a.compareTo(b));  // negative value
+    }
+}
