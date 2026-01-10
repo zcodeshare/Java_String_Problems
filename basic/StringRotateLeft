@@ -1,4 +1,4 @@
-public class StringRotate {
+public class StringRotateLeft {
     public static void main(String[] args) {
         String str = "HELLO";
         int rotate = 2;  // number of positions to rotate left
