@@ -1,0 +1,6 @@
+public class LastDigit {
+    public static void main(String[] args) {
+        int n = 9876;
+        System.out.println(n % 10);
+    }
+}
