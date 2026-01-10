@@ -1,0 +1,19 @@
+import java.util.HashSet;
+
+public class CheckDuplicateChars {
+    public static void main(String[] args) {
+        String str = "hello";
+
+        HashSet<Character> set = new HashSet<>();
+        boolean hasDuplicate = false;
+
+        for (char ch : str.toCharArray()) {
+            if (!set.add(ch)) {
+                hasDuplicate = true;
+                break;
+            }
+        }
+
+        System.out.println(hasDuplicate);
+    }
+}
