@@ -1,0 +1,7 @@
+public class IntegerValueOfExample {
+    public static void main(String[] args) {
+        String s = "200";
+        Integer n = Integer.valueOf(s);
+        System.out.println(n + 50);
+    }
+}
