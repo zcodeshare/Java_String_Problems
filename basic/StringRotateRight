@@ -1,0 +1,19 @@
+public class StringRotateRight {
+    public static void main(String[] args) {
+        String str = "HELLO";
+        int rotate = 2;  // number of positions to rotate right
+
+        char[] arr = str.toCharArray();
+        int len = arr.length;
+
+        for (int r = 0; r < rotate; r++) {
+            char last = arr[len - 1];
+            for (int i = len - 1; i > 0; i--) {
+                arr[i] = arr[i - 1];
+            }
+            arr[0] = last;
+        }
+
+        System.out.println("Right Rotated String: " + new String(arr));
+    }
+}
