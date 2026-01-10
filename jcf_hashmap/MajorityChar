@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MajorityChar {
+    public static void main(String[] args) {
+        String str = "aaabbc";
+
+        Map<Character, Integer> map = new HashMap<>();
+        for (char ch : str.toCharArray()) {
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+
+        int n = str.length();
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > n / 2) {
+                System.out.println(entry.getKey());
+                break;
+            }
+        }
+    }
+}
