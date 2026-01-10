@@ -1,0 +1,6 @@
+public class TrimExample {
+    public static void main(String[] args) {
+        String str = "   hello world   ";
+        System.out.println("[" + str.trim() + "]"); // "[hello world]"
+    }
+}
