@@ -1,0 +1,11 @@
+public class EndsWithSuffix {
+    public static void main(String[] args) {
+        String str = "Java programming";
+        String suffix = "ing";
+
+        if (str.endsWith(suffix))
+            System.out.println("String ends with suffix '" + suffix + "'");
+        else
+            System.out.println("String does NOT end with suffix '" + suffix + "'");
+    }
+}
