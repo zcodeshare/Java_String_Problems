@@ -1,0 +1,9 @@
+public class ReplaceSpaces {
+    public static void main(String[] args) {
+        String str = "Java Programming is fun";
+
+        String result = str.replace(' ', '_');
+
+        System.out.println("After replacing spaces: " + result);
+    }
+}
