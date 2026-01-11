@@ -1,0 +1,11 @@
+public class StartsWithPrefix {
+    public static void main(String[] args) {
+        String str = "Java programming";
+        String prefix = "Java";
+
+        if (str.startsWith(prefix))
+            System.out.println("String starts with prefix '" + prefix + "'");
+        else
+            System.out.println("String does NOT start with prefix '" + prefix + "'");
+    }
+}
