@@ -1,0 +1,17 @@
+public class UpperLowerCount {
+    public static void main(String[] args) {
+        String str = "Java Programming 123";
+        int upper = 0, lower = 0;
+
+        for (char ch : str.toCharArray()) {
+            if (ch >= 'A' && ch <= 'Z') {
+                upper++;
+            } else if (ch >= 'a' && ch <= 'z') {
+                lower++;
+            }
+        }
+
+        System.out.println("Uppercase letters: " + upper);
+        System.out.println("Lowercase letters: " + lower);
+    }
+}
