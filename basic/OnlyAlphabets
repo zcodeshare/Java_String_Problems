@@ -1,0 +1,21 @@
+public class OnlyAlphabets {
+    public static void main(String[] args) {
+        String str = "JavaProgramming";
+
+        boolean isAlphabet = true;
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (!(ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')) {
+                isAlphabet = false;
+                break;
+            }
+        }
+
+        if (isAlphabet)
+            System.out.println("String contains only alphabets");
+        else
+            System.out.println("String does NOT contain only alphabets");
+    }
+}
