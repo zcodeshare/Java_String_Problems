@@ -1,0 +1,15 @@
+public class FirstOccurrence {
+    public static void main(String[] args) {
+        String str = "programming";
+        char ch = 'g';
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                System.out.println("First occurrence of '" + ch + "' is at index: " + i);
+                return;
+            }
+        }
+
+        System.out.println("Character not found");
+    }
+}
