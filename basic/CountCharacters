@@ -1,0 +1,35 @@
+public class CountCharacters1 {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+
+        int count = str.length();
+
+        System.out.println("Total characters: " + count);
+    }
+}
+
+
+public class CountCharacters2 {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        int count = 0;
+
+        for (char ch : str.toCharArray()) {
+            count++;
+        }
+
+        System.out.println("Total characters: " + count);
+    }
+}
+
+
+public class CountCharacters3 {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+
+        String noSpaces = str.replace(" ", "");
+        int count = noSpaces.length();
+
+        System.out.println("Total characters (without spaces): " + count);
+    }
+}
