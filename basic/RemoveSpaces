@@ -1,0 +1,46 @@
+public class RemoveSpaces1 {
+    public static void main(String[] args) {
+        String str = "  Java   is  very easy  ";
+
+        String result = str.replace(" ", "");
+
+        System.out.println("After removing spaces: " + result);
+    }
+}
+
+public class RemoveSpaces2 {
+    public static void main(String[] args) {
+        String str = "  Java   is \n very \t easy  ";
+
+        String result = str.replaceAll("\\s+", "");
+
+        System.out.println("After removing spaces: " + result);
+    }
+}
+
+public class RemoveSpaces3 {
+    public static void main(String[] args) {
+        String str = "  Java   is  very easy  ";
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (ch != ' ') {
+                result.append(ch);
+            }
+        }
+
+        System.out.println("After removing spaces: " + result.toString());
+    }
+}
+
+public class RemoveSpaces4 {
+    public static void main(String[] args) {
+        String str = "   Java is easy   ";
+
+        String result = str.trim();
+
+        System.out.println("After trim: " + result);
+    }
+}
