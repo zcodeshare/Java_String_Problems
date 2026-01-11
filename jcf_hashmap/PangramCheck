@@ -17,3 +17,27 @@ public class PangramCheck {
         System.out.println(set.size() == 26);
     }
 }
+
+
+import java.util.HashSet;
+
+public class PangramCheck2 {
+    public static void main(String[] args) {
+        String str = "The quick brown fox jumps over the lazy dog";
+        str = str.toLowerCase();
+
+        HashSet<Character> set = new HashSet<>();
+
+        for (char ch : str.toCharArray()) {
+            if (ch >= 'a' && ch <= 'z') {
+                set.add(ch);
+            }
+        }
+
+        if (set.size() == 26)
+            System.out.println("The string is a pangram");
+        else
+            System.out.println("The string is NOT a pangram");
+    }
+}
+
