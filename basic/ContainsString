@@ -1,0 +1,24 @@
+public class ContainsString1 {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        String sub = "Program";
+
+        if (str.contains(sub))
+            System.out.println("String contains the substring");
+        else
+            System.out.println("String does NOT contain the substring");
+    }
+}
+
+
+public class ContainsString2 {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        String sub = "Program";
+
+        if (str.indexOf(sub) != -1)
+            System.out.println("String contains the substring");
+        else
+            System.out.println("String does NOT contain the substring");
+    }
+}
