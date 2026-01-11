@@ -1,0 +1,18 @@
+public class LastOccurrence {
+    public static void main(String[] args) {
+        String str = "programming";
+        char ch = 'g';
+        int index = -1;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                index = i; // last matched index update karte jao
+            }
+        }
+
+        if (index != -1)
+            System.out.println("Last occurrence of '" + ch + "' is at index: " + index);
+        else
+            System.out.println("Character not found");
+    }
+}
