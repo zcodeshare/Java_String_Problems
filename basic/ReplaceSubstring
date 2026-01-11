@@ -1,0 +1,10 @@
+public class ReplaceSubstring {
+    public static void main(String[] args) {
+        String str = "I love Java Programming";
+        String oldSub = "Java";
+        String newSub = "Python";
+
+        String result = str.replace(oldSub, newSub);
+        System.out.println("After replacement: " + result);
+    }
+}
