@@ -1,51 +1,169 @@
-BottomRow
+List of Pattern Questions
 
-DiamondPattern
+Top Row
 
-HollowDiamond
+Bottom Row
 
-HollowInvertedLeftTriangle
+Left Column
 
-HollowInvertedRightTriangle
+Right Column
 
-HollowLeftTriangle
+Main Diagonal
 
-HollowPyramid
+Opposite Diagonal
 
-HollowRectangle
+X Pattern
 
-HollowRightTriangle
+Hollow Square
 
-HollowSquare
+Hollow Rectangle
 
-InvertedHollowPyramid
+Left Triangle
 
-InvertedLeftTriangle
+Hollow Left Triangle
 
-InvertedRightTriangle
+Inverted Left Triangle
 
-InvertedSolidPyramid
+Hollow Inverted Left Triangle
 
-LeftColumn
+Right Triangle
 
-LeftTriangle
+Hollow Right Triangle
 
-MainDiagonal
+Inverted Right Triangle
 
-OppDiagonal
+Hollow Inverted Right Triangle
 
-PyramidLeftEdge
+Pyramid Left Edge
 
-PyramidRightEdge
+Pyramid Right Edge
 
-RightColumn
+Solid Pyramid
 
-RightTriangle
+Hollow Pyramid
 
-SolidPyramid
+Inverted Pyramid
 
-TopRow
+Hollow Inverted Pyramid
 
-XPattern
+Diamond Pattern
 
-✅ Total = 25 questions
+Hollow Diamond Pattern
+
+
+
+🟥 BASIC LINES & DIAGONALS
+
+1️⃣ Top Row
+i == 1
+
+2️⃣ Bottom Row
+i == n
+
+3️⃣ Left Column
+j == 1
+
+4️⃣ Right Column
+j == n
+
+5️⃣ Main Diagonal ()
+i == j
+
+6️⃣ Opposite Diagonal (/)
+i + j == n + 1
+
+7️⃣ X Pattern
+i == j || i + j == n + 1
+
+🔲 HOLLOW & BORDER PATTERNS
+8️⃣ Hollow Square
+i == 1 || i == n || j == 1 || j == n
+
+9️⃣ Hollow Rectangle
+i == 1 || i == rows || j == 1 || j == cols
+
+🔺 LEFT TRIANGLES
+🔟 Left Triangle
+j <= i
+
+1️⃣1️⃣ Hollow Left Triangle
+j == 1 || i == n || j == i
+
+1️⃣2️⃣ Inverted Left Triangle
+j <= n - i + 1
+
+1️⃣3️⃣ Hollow Inverted Left Triangle
+j == 1 || i == 1 || j == n - i + 1
+
+🔺 RIGHT TRIANGLES
+1️⃣4️⃣ Right Triangle
+j >= n - i + 1
+
+1️⃣5️⃣ Hollow Right Triangle
+j == n || i == n || j == n - i + 1
+
+1️⃣6️⃣ Inverted Right Triangle
+j >= i
+
+1️⃣7️⃣ Hollow Inverted Right Triangle
+j == n || i == 1 || j == i
+
+🔷 PYRAMID PATTERNS
+
+(Columns = 2*n - 1)
+
+1️⃣8️⃣ Pyramid Left Edge
+j == n - i + 1
+
+1️⃣9️⃣ Pyramid Right Edge
+j == n + i - 1
+
+2️⃣0️⃣ Solid Pyramid
+j >= n - i + 1 && j <= n + i - 1
+
+2️⃣1️⃣ Hollow Pyramid
+i == n || j == n - i + 1 || j == n + i - 1
+
+🔻 INVERTED PYRAMIDS
+2️⃣2️⃣ Inverted Pyramid
+j >= i && j <= 2*n - i
+
+2️⃣3️⃣ Hollow Inverted Pyramid
+i == 1 || j == i || j == 2*n - i
+
+💎 DIAMOND PATTERNS
+
+(Combination of pyramid + inverted pyramid)
+
+2️⃣4️⃣ Diamond Pattern
+Upper:
+j >= n - i + 1 && j <= n + i - 1
+
+Lower:
+j >= i - n + 1 && j <= 3*n - i - 1
+
+2️⃣5️⃣ Hollow Diamond Pattern
+j == n - i + 1 ||
+j == n + i - 1 ||
+j == i - n + 1 ||
+j == 3*n - i - 1
+
+🧠 GOLDEN RULE (Interview Secret)
+
+👉 Har pattern = ek condition game
+
+Socho:
+
+i control karta hai height
+
+j control karta hai left / right / space
+
++ , - , <= , >= se shape banti hai
+
+Agar tum:
+
+pehle 10×10 matrix me condition check
+
+phir code likho
+
+👉 99% pattern questions clear 💯
