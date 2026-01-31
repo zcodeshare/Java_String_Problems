@@ -1,0 +1,20 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CreateFile {
+    public static void main(String[] args) {
+        try {
+            File f = new File("demo.txt");
+            f.createNewFile();
+
+            FileWriter fw = new FileWriter(f);
+            fw.write("Hello, this file is created and written using Java.");
+            fw.close();
+
+            System.out.println("File created and text written successfully");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
