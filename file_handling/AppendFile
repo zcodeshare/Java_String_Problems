@@ -1,0 +1,19 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class AppendFile {
+    public static void main(String[] args) {
+        try {
+            File f = new File("demo.txt");
+            FileWriter fw = new FileWriter(f, true);
+
+            fw.write("\nThis text is appended to the file.");
+            fw.close();
+
+            System.out.println("Text appended successfully");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
