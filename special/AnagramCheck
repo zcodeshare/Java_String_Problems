@@ -6,11 +6,6 @@ public class AnagramCheck {
         String str1 = "Listen";
         String str2 = "Silent";
 
-        if (str1 == null || str2 == null) {
-            System.out.println("One or both strings are null");
-            return;
-        }
-
         if (str1.length() != str2.length()) {
             System.out.println("Not Anagram");
             return;
