@@ -1,0 +1,14 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WriteUsingFileWriter {
+    public static void main(String[] args) {
+        try {
+            FileWriter fw = new FileWriter("demo.txt");
+            fw.write("Writing using FileWriter");
+            fw.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
