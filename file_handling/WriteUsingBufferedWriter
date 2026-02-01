@@ -1,0 +1,18 @@
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
+public class WriteUsingBufferedWriter {
+    public static void main(String[] args) {
+        BufferedWriter bw = null;
+        try {
+            bw = new BufferedWriter(new FileWriter("demo2.txt"));
+            bw.write("Writing using BufferedWriter");
+            bw.newLine();
+            bw.write("Second line");
+            bw.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
