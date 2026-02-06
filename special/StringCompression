@@ -43,3 +43,32 @@ public class StringCompression {
         System.out.println(compressed.toString());
     }
 }
+
+// Third Approach
+
+public class CompareStrings {
+    public static void main(String[] args) {
+        String s1 = "abbcccccaaa";
+        String s2 = "a1b2c5a3";
+
+        StringBuilder compressed = new StringBuilder();
+        int count = 1;
+
+        for (int i = 0; i < s1.length(); i++) {
+            if (i < s1.length() - 1 && s1.charAt(i) == s1.charAt(i + 1)) {
+                count++;
+            } else {
+                compressed.append(s1.charAt(i)).append(count);
+                count = 1;
+            }
+        }
+
+        if (compressed.toString().equals(s2)) {
+            System.out.println("Strings match.");
+        } else {
+            System.out.println("Strings do NOT match.");
+        }
+    }
+}
+
+
