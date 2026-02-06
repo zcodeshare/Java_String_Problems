@@ -1,0 +1,109 @@
+🔹 BASIC (Foundation)
+
+1️⃣ Count vowels, consonants, digits, special characters
+
+2️⃣ Count number of words in a string
+
+3️⃣ Reverse a string
+
+4️⃣ Reverse each word (order preserve)
+
+5️⃣ Reverse string with space preserving
+
+6️⃣ Check palindrome string
+
+7️⃣ Check palindrome number
+
+8️⃣ Count frequency of each character
+
+9️⃣ Count frequency of each word
+
+🔟 Remove duplicate characters
+
+🔹 CORE INTERVIEW (Most Asked)
+
+1️⃣1️⃣ Find duplicate characters
+
+1️⃣2️⃣ Find first non-repeated character
+
+1️⃣3️⃣ Check two strings are anagram
+
+1️⃣4️⃣ String compression (aabccc → a2b1c3)
+
+1️⃣5️⃣ Remove digits from string
+
+1️⃣6️⃣ Remove special characters
+
+1️⃣7️⃣ Count uppercase and lowercase letters
+
+1️⃣8️⃣ Check string contains only digits
+
+1️⃣9️⃣ Find longest word in a sentence
+
+2️⃣0️⃣ Count occurrence of a given character
+
+🔹 REGEX + LOGIC HEAVY
+
+2️⃣1️⃣ Check string contains only alphabets
+
+2️⃣2️⃣ Check string contains only alphanumeric characters
+
+2️⃣3️⃣ Remove spaces from string
+
+2️⃣4️⃣ Replace multiple spaces with single space
+
+2️⃣5️⃣ Count number of spaces
+
+2️⃣6️⃣ Extract only digits from string
+
+2️⃣7️⃣ Extract only alphabets from string
+
+2️⃣8️⃣ Extract only special characters
+
+2️⃣9️⃣ Validate email using regex
+
+3️⃣0️⃣ Validate mobile number using regex
+
+🔹 STRING TRANSFORMATION
+
+3️⃣1️⃣ Convert string to title case
+
+3️⃣2️⃣ Reverse words order in sentence
+
+3️⃣3️⃣ Capitalize first letter of each word
+
+3️⃣4️⃣ Toggle case of each character
+
+3️⃣5️⃣ Remove vowels from string
+
+3️⃣6️⃣ Remove consonants from string
+
+3️⃣7️⃣ Sort characters in string
+
+3️⃣8️⃣ Check substring present or not (without contains)
+
+3️⃣9️⃣ Replace a word in sentence
+
+4️⃣0️⃣ Split string without using split()
+
+🔹 ADVANCED / THINKING QUESTIONS
+
+4️⃣1️⃣ Find longest repeating character sequence
+
+4️⃣2️⃣ Find most frequent character
+
+4️⃣3️⃣ Find least frequent character
+
+4️⃣4️⃣ Check string rotation
+
+4️⃣5️⃣ Compare two strings lexicographically
+
+4️⃣6️⃣ Find all substrings of a string
+
+4️⃣7️⃣ Count palindromic substrings
+
+4️⃣8️⃣ Remove a specific character
+
+4️⃣9️⃣ Print string permutations
+
+5️⃣0️⃣ Check valid palindrome (ignore space & case)
