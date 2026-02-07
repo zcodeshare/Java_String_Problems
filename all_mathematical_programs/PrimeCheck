@@ -1,9 +1,23 @@
 public class PrimeCheck {
     public static void main(String[] args) {
-        int n = 13, count = 0;
-        for (int i = 1; i <= n; i++) {
-            if (n % i == 0) count++;
+        int num = 29;
+        boolean isPrime = true;
+
+        if (num < 2) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
         }
-        System.out.println(count == 2);
+
+        if (isPrime) {
+            System.out.println(num + " is a prime number.");
+        } else {
+            System.out.println(num + " is not a prime number.");
+        }
     }
 }
