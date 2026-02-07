@@ -1,0 +1,28 @@
+public class PrimeSumInRange {
+    public static void main(String[] args) {
+        int start = 10;
+        int end = 50;
+        int sum = 0;
+
+        for (int i = start; i <= end; i++) {
+            boolean isPrime = true;
+
+            if (i < 2) {
+                isPrime = false;
+            } else {
+                for (int j = 2; j <= Math.sqrt(i); j++) {
+                    if (i % j == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+
+            if (isPrime) {
+                sum += i;
+            }
+        }
+
+        System.out.println("Sum of prime numbers from " + start + " to " + end + " is: " + sum);
+    }
+}
